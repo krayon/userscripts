@@ -22,5 +22,7 @@ Google search page but HIDEOUS.
 
   - [Stranger Google](https://github.com/krayon/userscripts/raw/main/stranger-google/stranger-google.user.js)
 
+  - ![Stranger Google preview](stranger-google/preview.png)
+
 ----
 [//]: # ( vim: set ts=4 sw=4 et cindent tw=80 ai si syn=markdown ft=markdown: )
