@@ -1,27 +1,34 @@
 // ==UserScript==
-// @name        GitHub Static Time
-// @version     1.0.10
-// @description A userscript that replaces relative times with a static time formatted as you like it
+// @name        GitHub Time
+// @version     1.1.0
+// @namespace   http://krayon.me/
+// @description A userscript that fixes times on GitHub properties
 // @license     MIT
+// @author      Krayon
 // @author      Rob Garrison
-// @namespace   https://github.com/Mottie
-// @match       https://github.com/*
+// @include     https://github.com/*
+// @include     https://*.githubapp.com/*
+// @include     https://*.github.com/*
 // @run-at      document-end
 // @grant       GM_addStyle
 // @grant       GM_getValue
 // @grant       GM_setValue
 // @grant       GM_registerMenuCommand
+// @grant       GM_log
 // @require     https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js
 // @require     https://greasyfork.org/scripts/28721-mutations/code/mutations.js?version=1108163
 // @require     https://greasyfork.org/scripts/398877-utils-js/code/utilsjs.js?version=1079637
 // @icon        https://github.githubassets.com/pinned-octocat.svg
-// @updateURL   https://raw.githubusercontent.com/Mottie/Github-userscripts/master/github-static-time.user.js
-// @downloadURL https://raw.githubusercontent.com/Mottie/Github-userscripts/master/github-static-time.user.js
-// @supportURL  https://github.com/Mottie/GitHub-userscripts/issues
+// @updateURL   https://raw.githubusercontent.com/krayon/userscripts/github-time/github-time.user.js
+// @downloadURL https://raw.githubusercontent.com/krayon/userscripts/github-time/github-time.user.js
+// @supportURL  https://github.com/krayon/userscripts/issues
 // ==/UserScript==
+
 (() => {
 	/* global moment $ $$ on */
 	"use strict";
+
+        GM_log("Userscript: GitHub Time");
 
 	let busy = false;
 	let timeFormat = GM_getValue("ghst-format", "LLL");
@@ -179,7 +186,7 @@
 			// update existing timestamps
 			? ".ghst-time"
 			// process html elements
-			: "relative-time, time-ago";
+			: "relative-time, time-ago, time";
 		if ($(selector)) {
 			let indx = 0;
 			const els = $$(selector);
@@ -249,7 +256,7 @@
 		});
 		div.innerHTML = `
 			<div id="ghst-settings-inner" class="boxed-group">
-				<h3>GitHub Static Time Settings</h3>
+				<h3>GitHub Time Settings</h3>
 				<div class="boxed-group-inner">
 					<dl class="form-group flattened">
 						<dt>
