@@ -16,5 +16,11 @@ I personally use the ISO8601 format `YYYY-MM-DD HH:mm:ss Z`, eg. `2023-07-25 15:
 
   - [GitHub Time settings](https://github.com/krayon/userscripts/raw/main/github-time/github-time.storage.js)
 
+## Stranger Google
+
+Google search page but HIDEOUS.
+
+  - [Stranger Google](https://github.com/krayon/userscripts/raw/main/stranger-google/stranger-google.user.js)
+
 ----
 [//]: # ( vim: set ts=4 sw=4 et cindent tw=80 ai si syn=markdown ft=markdown: )

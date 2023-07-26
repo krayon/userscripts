@@ -12,6 +12,9 @@
 // @run-at      document-end
 // @grant       GM_addStyle
 // @grant       GM_log
+// @updateURL   https://raw.githubusercontent.com/krayon/userscripts/stranger-google/stranger-google.user.js
+// @downloadURL https://raw.githubusercontent.com/krayon/userscripts/stranger-google/stranger-google.user.js
+// @supportURL  https://github.com/krayon/userscripts/issues
 // ==/UserScript==
 
 (function() {
