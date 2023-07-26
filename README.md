@@ -4,6 +4,8 @@ Userscripts I use and consider essential.
 
 ## GitHub Time
 
+Based off original work by [Motty](https://github.com/Mottie)
+
 GitHub properties use a relative date format. As this is frustrating, lossy and
 largly useless, apply the GitHub Time script to rectify this. The script targets
 `github.com` and `githubapps.com` specifically.
