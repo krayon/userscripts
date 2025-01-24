@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Stranger Google
-// @version     0.1
+// @version     0.2.0
 // @namespace   http://krayon.me/
 // @description Google now always starts with Stranger Things
 // @license     MIT
@@ -12,8 +12,8 @@
 // @run-at      document-end
 // @grant       GM_addStyle
 // @grant       GM_log
-// @updateURL   https://raw.githubusercontent.com/krayon/userscripts/stranger-google/stranger-google.user.js
-// @downloadURL https://raw.githubusercontent.com/krayon/userscripts/stranger-google/stranger-google.user.js
+// @updateURL   https://github.com/krayon/userscripts/raw/main/stranger-google/stranger-google.user.js
+// @downloadURL https://github.com/krayon/userscripts/raw/main/stranger-google/stranger-google.user.js
 // @supportURL  https://github.com/krayon/userscripts/issues
 // ==/UserScript==
 

@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        GitHub Time
-// @version     1.1.0
+// @version     1.2.0
 // @namespace   http://krayon.me/
 // @description A userscript that fixes times on GitHub properties
 // @license     MIT
@@ -19,8 +19,8 @@
 // @require     https://greasyfork.org/scripts/28721-mutations/code/mutations.js?version=1108163
 // @require     https://greasyfork.org/scripts/398877-utils-js/code/utilsjs.js?version=1079637
 // @icon        https://github.githubassets.com/pinned-octocat.svg
-// @updateURL   https://raw.githubusercontent.com/krayon/userscripts/github-time/github-time.user.js
-// @downloadURL https://raw.githubusercontent.com/krayon/userscripts/github-time/github-time.user.js
+// @updateURL   https://github.com/krayon/userscripts/raw/main/github-time/github-time.user.js
+// @downloadURL https://github.com/krayon/userscripts/raw/main/github-time/github-time.user.js
 // @supportURL  https://github.com/krayon/userscripts/issues
 // ==/UserScript==
 
