@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        GitHub Time
-// @version     1.2.0
+// @version     1.3.0
 // @namespace   http://krayon.me/
 // @description A userscript that fixes times on GitHub properties
 // @license     MIT
@@ -211,6 +211,7 @@
 						} else {
 							formatted = moment(time).format(timeFormat);
 							node = block.cloneNode(true);
+							node.className = el.className + " " + node.className;
 							node.setAttribute("datetime", time);
 							node.textContent = formatted;
 							node.title = formatted;
